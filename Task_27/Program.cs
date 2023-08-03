@@ -1,14 +1,14 @@
-﻿/*Задача 26: Напишите программу, которая
-принимает на вход число и выдаёт количество цифр
-в числе.
-456 -> 3
-78 -> 2
-89126 -> 5
+﻿/*Задача 27: Напишите программу, которая принимает на
+вход число и выдаёт сумму цифр в числе.
+452 -> 11
+82 -> 10
+9012 -> 12
 */
 
 int num = GetNumberFromUser();
-int count = GetCountDigits(num);
-Console.Write($"Количество символов в числе {num} равно: {count}");
+int sum = GetSumDigits(num);
+
+Console.Write($"Количество символов в числе {num} равно: {sum}");
 
 // -------------------------Определение методов ---------------------------------
 // Определяем функцию, выполняющую ввод целого числа с консоли
@@ -18,7 +18,7 @@ static int GetNumberFromUser()
     {
         try
         {
-            Console.Write("Введите число: ");
+            Console.Write("Введите любое целое число: ");
             int num = int.Parse(Console.ReadLine() ?? "");
             return num;
         }
@@ -29,14 +29,13 @@ static int GetNumberFromUser()
     }
 }
 //Функция расчета количества цифр в числе
-static int GetCountDigits(int num)
+static int GetSumDigits(int num)
 {
-    int count = 0;
-    while (num != 0)
+    int sum = 0;
+    for (int i = num == 0 ? 0 : 1; num > 0; num /= 10)
     {
-        count++;
-    num = num / 10;
+        sum += num % 10;
     }
-    return count;
-}
 
+    return sum;
+}
