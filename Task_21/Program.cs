@@ -23,19 +23,19 @@ Console.ForegroundColor = curConsoleColor;
 
         Console.WriteLine("ВВЕДИТЕ КООРДИНАТЫ ПЕРВОЙ ТОЧКИ ");
         
-        int xA = GetNumberFromUser();
+        int xA = GetNumberFromUser("Введите X: ");
         
-        int yA = GetNumberFromUser();
+        int yA = GetNumberFromUser("Введите Y: ");
        
-        int zA = GetNumberFromUser();
+        int zA = GetNumberFromUser("Введите Z: ");
 
         Console.WriteLine("ВВЕДИТЕ КООРДИНАТЫ ВТОРОЙ ТОЧКИ ");
         
-        int xB = GetNumberFromUser();
+        int xB = GetNumberFromUser("Введите X: ");
         
-        int yB = GetNumberFromUser();
+        int yB = GetNumberFromUser("Введите Y: ");
       
-        int zB = GetNumberFromUser();
+        int zB = GetNumberFromUser("Введите Z: ");
  
 
 
@@ -47,13 +47,13 @@ Console.Write($"Длина отрезка: {rezult}");
 
 
 // Определяем функцию, выполняющую ввод целого числа с консоли
-static int GetNumberFromUser()
+static int GetNumberFromUser(string message)
 {
     while (true)
     {
         try
         {
-            Console.Write("Введите целое число: ");
+            Console.Write(message);
             int num = int.Parse(Console.ReadLine() ?? "");
             return num;
         }
