@@ -5,6 +5,7 @@
 78 -> 2
 89126 -> 5
 */
+
 int num = GetNumberFromUser();
 int count = GetCountDigits(num);
 Console.Write($"Количество символов в числе {num} равно: {count}");
@@ -37,5 +38,4 @@ static int GetCountDigits(int num)
     }
     return count;
 }
-
 
