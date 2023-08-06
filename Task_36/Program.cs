@@ -38,3 +38,4 @@ int GetSumNotEnenElementArray(int[] arr)
     }
     return sum;
 }
+
