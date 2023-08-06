@@ -13,6 +13,8 @@ Console.WriteLine(string.Join(" ", array));
 int sum = GetSumNotEnenElementArray(array);
 Console.WriteLine($"Сумма не четных элементов массива равна: {sum}");
 
+
+
 // объявление методов
 // Метод заполнения массива случайными трехзначными числами 0 и 1
 int[] GetArray(int size, int minValue, int maxValue)
