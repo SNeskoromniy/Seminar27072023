@@ -2,8 +2,9 @@
 Задача 42 Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 45 -> 101101
 */
-int num = GetNumberFromUser();
+Console.Clear();
 
+int num = GetNumberFromUser();
 int[] array = GetBinaryNum(num);
 Console.WriteLine(String.Join("", array));
 

@@ -3,7 +3,7 @@
 треугольник с сторонами такой длины.
 Теорема о неравенстве треугольника: каждая сторона треугольника
 меньше суммы двух других сторон.
-*/
+*/ 
 
 int[] array = new int[3];
 Console.WriteLine("ВВЕДИТЕ длину первой стороны треугольника");
@@ -20,8 +20,8 @@ Console.WriteLine($"результат проверки: {result}");
 //Метод
 
 static int GetNumberFromUser()
-{
-    while (true)
+{   
+    while(true)
     {
         try
         {
@@ -31,7 +31,7 @@ static int GetNumberFromUser()
         }
         catch (Exception exc)
         {
-            Console.WriteLine($"Ошибка ввода данных! {exc.Message}");
+            Console.WriteLine($"Ошибка ввода данных! {exc.Message}");        
         }
     }
 }
