@@ -17,6 +17,8 @@ Console.WriteLine(@"************************************************************
 ************************************************************************");
 Console.ForegroundColor = curConsoleColor;
 #endregion 
+
+//Определение значений
 int b1 = GetNumberFromUser("введите число b1: ");
 int k1 = GetNumberFromUser("введите число k1: ");
 int b2 = GetNumberFromUser("введите число b2: ");
@@ -25,8 +27,11 @@ int k2 = GetNumberFromUser("введите число k2: ");
 double[] result = GetIntersectionPoint(b1, k1, b2, k2);
 Console.WriteLine(String.Join(" ", result));
 
+//Конец программы
 
-//метод ввода числа
+
+//Определение методов
+//метод ввода числа с клавиатуры
 static int GetNumberFromUser(string message)
 {
     while (true)
