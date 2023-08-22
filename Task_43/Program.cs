@@ -53,7 +53,7 @@ static int GetNumberFromUser(string message)
 double[] GetIntersectionPoint(int b1, int k1, int b2, int k2)
 {
 double[] array = new double[2];
-array[0] = (double) (b2 - b1)/(k1-k2);
-array[1] = (double) (k1 * array[0]) + b1;
+array[0] = Math.Round((double) (b2 - b1)/(k1-k2), 2);
+array[1] = Math.Round((double) (k1 * array[0]) + b1, 2);
 return array;
 }
