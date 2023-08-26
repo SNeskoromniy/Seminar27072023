@@ -25,8 +25,7 @@ Console.ForegroundColor = curConsoleColor;
 //Определение значений
 int sizeI = GetNumberFromUser("введите количество строк в массиве: ");
 int sizeJ = GetNumberFromUser("введите количество столбцов в массиве: ");
-//int b2 = GetNumberFromUser("введите число b2: ");
-//int k2 = GetNumberFromUser("введите число k2: ");
+
 
 
 //Инициализация массива 
