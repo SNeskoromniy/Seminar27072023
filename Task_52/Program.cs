@@ -34,9 +34,10 @@ FillArray(matrix);
 
 //Печать массива заполненного случайными числами
 PrintArray(matrix);
-
+//Вызов функции расчета среднего арифметического по столбцам
 resultArray = GetArithmeticMeanNum(matrix);
-Console.WriteLine("Результат расчета среднего арифметического: ");
+
+Console.WriteLine("Результат расчета среднего арифметического по столбцам: ");
 Console.WriteLine(string.Join("; ", resultArray));
 //Конец программы
 
