@@ -80,7 +80,7 @@ void FillArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            matr[i, j] = new Random().Next(1, 10);//[1; 10)
+            matr[i, j] = new Random().Next(1, 10); //[1; 9)
         }
     }
 }
