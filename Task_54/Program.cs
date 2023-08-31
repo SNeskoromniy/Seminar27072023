@@ -25,7 +25,7 @@ int colum = GetNumberFromUser("введите количество столбц�
 int[,] matrix = new int[row, colum];//Инициализация массива 
 FillArray(matrix);//Заполняем массив случайными числами
 PrintArray(matrix);
-GetSortArray(matrix);
+GetSortRowArray(matrix);
 PrintArray(matrix);
 
 //Конец программы
@@ -74,7 +74,7 @@ void FillArray(int[,] matr)
     }
 }
 //Метод расчета суммы главной диагонали
-void GetSortArray(int[,] matr)
+void GetSortRowArray(int[,] matr)
 {
     int temp;
     for (int i = 0; i < matr.GetLength(0); i++)
