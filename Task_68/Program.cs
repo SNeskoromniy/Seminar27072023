@@ -3,7 +3,6 @@
 рекурсии. Даны два неотрицательных числа m и n.
 m = 2, n = 3 -> A(m,n) = 29
 */ 
-
 #region --- 00. Configuration ---
 Console.Clear();
 Console.Title = "Задача №66";
@@ -22,7 +21,6 @@ int numM = GetNumberFromUser("введите число M: ");
 int numN = GetNumberFromUser("введите число N: ");
 int result = FAckerman(numM, numN);
 Console.WriteLine(result);
-
 
 //Определение методов
 //Метод вычисления функции Аккермана
