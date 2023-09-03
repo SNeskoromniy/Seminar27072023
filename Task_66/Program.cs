@@ -5,7 +5,6 @@
 #region --- 00. Configuration ---
 Console.Clear();
 Console.Title = "Задача №66";
-
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 var curConsoleColor = Console.ForegroundColor;
 Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -26,7 +25,7 @@ if (numM > numN)
 }
 int result = GetSum(numM, numN);
 Console.WriteLine(result);
-
+//Конец программы
 
 //Определение методов
 //
