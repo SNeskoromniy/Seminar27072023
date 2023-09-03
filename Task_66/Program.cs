@@ -19,7 +19,12 @@ Console.ForegroundColor = curConsoleColor;
 //
 int numM = GetNumberFromUser("введите число M: ");
 int numN = GetNumberFromUser("введите число N: ");
-
+if (numM > numN)
+{
+    int temp = numM;
+    numM = numN;
+    numN = temp;
+}
 int result = GetSum(numM, numN);
 Console.WriteLine(result);
 
@@ -28,8 +33,8 @@ Console.WriteLine(result);
 //
 int GetSum(int M, int N)
 {
-if (N == M) return N;
-return N + GetSum(N - 1, M);
+if (M == N) return N;
+return N + GetSum(M, N - 1);
 }
 
 
